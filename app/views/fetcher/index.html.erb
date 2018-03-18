@@ -1,7 +1,7 @@
 <h1>Facebook Page Top Shares API</h1>
 
 <div class='container'>
-  <%= form_tag("/data/search", method: "get") do %>
+  <%= form_tag("/fetcher/search", method: "get") do %>
     <%= label_tag(:q, "Search for:") %>
     <%= text_field_tag(:q) %><br>
 

@@ -1,5 +1,5 @@
 <h1><%= @query %>: Top posts by share count</h1>
-<h4 style='margin-left: 2em'><%= link_to 'Back', data_path %></h4><hr>
+<h4 style="margin-left: 2em"><%= link_to 'Back', fetcher_path %></h4><hr>
 
 <div class='container messages'>
   <% @lib[:data].first( @postlimit.to_i ).each do |post| %>

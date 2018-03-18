@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'fetcher/index'
-
-  resources :data
+  resources :fetcher
 
   root 'fetcher#index'
 end
