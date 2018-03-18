@@ -1,2 +1,19 @@
-<h1>Fetcher#index</h1>
-<p>Find me in app/views/fetcher/index.html.erb</p>
+<h1>Facebook Page Top Shares API</h1>
+
+<div class='container'>
+  <%= form_tag("/data/search", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %><br>
+
+    <%= label_tag(:k, "Max posts per page:") %>
+    <%= text_field_tag(:k) %><br>
+
+    <%= label_tag(:n, "Posts to display:") %>
+    <%= text_field_tag(:n) %><br>
+
+    <%= label_tag(:token, "Page token:") %>
+    <%= text_field_tag(:token) %><br>
+
+    <%= submit_tag("Search") %>
+  <% end %>
+</div>

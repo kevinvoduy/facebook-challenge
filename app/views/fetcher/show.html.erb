@@ -1,0 +1,13 @@
+<h1><%= @query %>: Top posts by share count</h1>
+<h4 style='margin-left: 2em'><%= link_to 'Back', data_path %></h4><hr>
+
+<div class='container messages'>
+  <% @lib[:data].first( @postlimit.to_i ).each do |post| %>
+    <h4><strong>Message</strong></h4>
+    <h5><%= post['message'] %></h5>
+
+    <h4>
+      <strong>shares: </strong><%= post['shares']['count'] %>
+    </h4><hr>
+  <% end %>
+</div>
